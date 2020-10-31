@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <ProductConsumer>
       {(value) => {
-        const { links, sidebarOpen, handleSidebar } = value;
+        // const { links, sidebarOpen, handleSidebar } = value;
         return (
           <SideWrapper>
             <ul>
