@@ -1,7 +1,15 @@
 import React from 'react';
+import Hero from '../components/Hero';
+import CartSection from '../components/CartPage';
+import cartBcg from '../images/storeBcg.jpeg';
 
 function CartPage() {
-  return <div>CartPage</div>;
+  return (
+    <>
+      <Hero img={cartBcg} />
+      <CartSection />
+    </>
+  );
 }
 
 export default CartPage;

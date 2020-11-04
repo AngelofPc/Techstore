@@ -1,10 +1,19 @@
 import React from 'react';
-import { ProductConsumer } from '../context';
+import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
+import Services from '../components/HomePage/Services';
+import Featured from '../components/HomePage/Featured';
 
 function HomePage() {
   return (
     <>
-      <ProductConsumer>{(value) => <h1>Context</h1>}</ProductConsumer>
+      <Hero title='awesome gadgets'>
+        <Link to='/products' className='main-link' style={{ margin: '2rem' }}>
+          our products
+        </Link>
+      </Hero>
+      <Services />
+      <Featured />
     </>
   );
 }
